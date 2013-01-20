@@ -2,10 +2,12 @@
 
 class Controller_Main extends Controller_Template
 {
+    public function before() {
+        parent::before();
 
-    public function action_index()
-    {
-        $this->response->body('hello, world!');
+        if (!Auth::instance()->logged_in()) {
+            //HTTP::redirect('login');
+        }
     }
 
 } // End Welcome
