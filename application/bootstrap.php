@@ -111,7 +111,8 @@ Kohana::modules(array( // 'auth'       => MODPATH.'auth',       // Basic authent
     'orm' => MODPATH . 'orm', // Object Relationship Mapping
     // 'unittest'   => MODPATH.'unittest',   // Unit testing
     // 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-    'auth' => MODPATH . 'auth', // User guide and API documentation
+    'auth' => MODPATH . 'auth', //
+    'notify' => MODPATH . 'notify', //
 ));
 
 /**
